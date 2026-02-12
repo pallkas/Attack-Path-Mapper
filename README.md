@@ -387,13 +387,10 @@ Contributions welcome! Ideas for improvements:
 - [ ] Historical attack path database
 - [ ] Collaborative features for team assessments
 
-## 📄 License
-
-MIT License - see LICENSE file for details
 
 ## 👤 Author
 
-**Your Name**
+**Pallase Kasdorf**
 - GitHub: [@yourusername](https://github.com/pallkas)
 
 
@@ -402,4 +399,3 @@ MIT License - see LICENSE file for details
 
 **⭐ If you find this tool useful, please star the repository!**
 
-Made with ❤️ for the security community
