@@ -1,0 +1,74 @@
+{
+  "scan_date": "2026-02-05",
+  "target": "example-corp.com",
+  "vulnerabilities": [
+    {
+      "id": "ssh_weak_auth_01",
+      "type": "ssh_weak_auth",
+      "description": "SSH server accepts weak password authentication",
+      "port": 22,
+      "service": "OpenSSH 7.4",
+      "severity": 7
+    },
+    {
+      "id": "web_sqli_01",
+      "type": "web_sqli",
+      "description": "SQL injection vulnerability in /api/login endpoint",
+      "port": 443,
+      "service": "Apache 2.4.41",
+      "severity": 9
+    },
+    {
+      "id": "web_sqli_02",
+      "type": "web_sqli",
+      "description": "SQL injection in user search functionality",
+      "port": 443,
+      "service": "Apache 2.4.41",
+      "severity": 8
+    },
+    {
+      "id": "web_xss_01",
+      "type": "web_xss",
+      "description": "Reflected XSS in search parameter",
+      "port": 443,
+      "service": "Apache 2.4.41",
+      "severity": 6
+    },
+    {
+      "id": "open_port_01",
+      "type": "open_port",
+      "description": "MongoDB exposed without authentication",
+      "port": 27017,
+      "service": "MongoDB 4.2",
+      "severity": 9
+    },
+    {
+      "id": "misconfigured_s3_01",
+      "type": "misconfigured_s3",
+      "description": "S3 bucket 'company-backups' allows public read access",
+      "service": "AWS S3",
+      "severity": 8
+    },
+    {
+      "id": "privilege_escalation_01",
+      "type": "privilege_escalation",
+      "description": "Docker group membership allows privilege escalation",
+      "service": "Docker",
+      "severity": 9
+    },
+    {
+      "id": "credential_reuse_01",
+      "type": "credential_reuse",
+      "description": "Database credentials hardcoded in application config",
+      "service": "Application",
+      "severity": 7
+    },
+    {
+      "id": "data_exfiltration_01",
+      "type": "data_exfiltration",
+      "description": "No egress filtering - unrestricted outbound connections",
+      "service": "Firewall",
+      "severity": 10
+    }
+  ]
+}
